@@ -42,6 +42,6 @@ class ExampleRobolectricTest {
     val themeManager = ThemeManager(context)
     val currentTheme = themeManager.currentTheme.value
     assertNotNull(currentTheme)
-    assertEquals("Default Dark", currentTheme.name)
+    assertEquals("Dark", currentTheme.name)
   }
 }

@@ -28,6 +28,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ScreenShare
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.BugReport
 import androidx.compose.material.icons.filled.Close
@@ -117,7 +118,7 @@ enum class ClientCategory(val title: String, val icon: ImageVector) {
     NOTIFICATIONS("Notifications", Icons.Default.Notifications),
     VOICE("Voice", Icons.Default.Mic),
     VIDEO("Video", Icons.Default.Videocam),
-    SCREEN_SHARE("Screen Share", Icons.Default.ScreenShare),
+    SCREEN_SHARE("Screen Share", Icons.AutoMirrored.Filled.ScreenShare),
     PERMISSIONS("Permissions", Icons.Default.Security),
     KEYBINDS("Keybinds", Icons.Default.Keyboard),
     PERFORMANCE("Performance", Icons.Default.Speed),
@@ -1420,7 +1421,7 @@ fun ClientScreenShareSection(
                                 modifier = Modifier.fillMaxWidth(),
                                 shape = RoundedCornerShape(10.dp)
                             ) {
-                                Icon(imageVector = Icons.Default.ScreenShare, contentDescription = null, modifier = Modifier.size(16.dp))
+                                Icon(imageVector = Icons.AutoMirrored.Filled.ScreenShare, contentDescription = null, modifier = Modifier.size(16.dp))
                                 Spacer(modifier = Modifier.width(6.dp))
                                 Text("Start Screen Share Session")
                             }
